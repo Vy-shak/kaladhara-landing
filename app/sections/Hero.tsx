@@ -3,7 +3,7 @@ import Navbar from '../components/Hero/Navbar'
 
 function Hero() {
     return (
-        <section className="w-screen h-screen">
+        <section className="w-full h-screen">
             <Navbar/>
             <video className="object-cover h-screen w-screen" autoPlay
                 loop

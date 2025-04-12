@@ -13,7 +13,7 @@ const navItems = [
 
 function Navbar() {
   return (
-    <div className='w-screen flex px-12 py-4 absolute top-0 justify-between items-center'>
+    <div className='w-full flex px-12 py-4 absolute top-0 justify-between items-center'>
         <Image className='h-12 w-fit' alt='kaldhara logo' src={LogoLg}/>
         <div className='flex justify-center items-center gap-x-8'>
           {navItems.map((item)=>(
