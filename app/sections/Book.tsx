@@ -16,7 +16,9 @@ function Book() {
             <div>
 
             </div>
-            )
+            <div className='w-full bg-yellow-600 h-3'>
+
+            </div>
         </>)
 }
 
