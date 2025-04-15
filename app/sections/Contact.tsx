@@ -1,6 +1,7 @@
 import React from 'react'
 import {Phone,Calendar,Share2,MapPin,Mail } from "lucide-react"
 import Contactcard from '../components/Contact/Contactcard';
+import Form from '../components/Contact/Form';
 
 
 
@@ -26,8 +27,7 @@ const contactInfo = [
       title: "Social",
       icon: <Share2 />,
       items: [
-        "www.instagram.com", "instagram" ,
-        "Linkdin.com", "linkedin" 
+        "www.instagram.com", "instagram" , 
       ]
     },
     {
@@ -49,7 +49,7 @@ const contactInfo = [
 
 function Contact() {
     return (
-        <section className='w-full flex flex-col justify-center items-center'>
+        <section className='w-full gap-y-16 flex flex-col justify-center px-16 items-center'>
             <div className='w-fit gap-y-4 flex justify-center items-center flex-col'>
                 <h3 className='text-white whitespace-nowrap flex justify-center items-center gap-x-3 font-semibold  text-3xl '>
                     <span>Visit</span>
@@ -71,11 +71,17 @@ function Contact() {
                     </div>
                 </div>
             </div>
-            <div className='w-full flex justify-center items-center'>
-                <div className='w-1/2 flex flex-wrap gap-6'>
+            <div className='w-full gap-x-20 flex justify-center items-start'>
+                <div className='w-1/2 grid gap-4 grid-cols-2'>
                 {contactInfo.map((item,index)=>(
                     <Contactcard key={index} main={item.title} details={item.items} icon={item.icon} />
                 ))}
+                </div>
+                <div className='w-1/2 relative -top-6 gap-y-12 flex flex-col justify-center items-start'>
+                  <Form/>
+                  <div className='w-4xl flex justify-start items-center'>
+                        <button className='px-20 py-4 bg-KalaYellow-500 font-semibold text-neutral-800'>EXPLORE</button>
+                  </div>
                 </div>
             </div>
         </section>
