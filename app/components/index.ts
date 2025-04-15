@@ -6,5 +6,6 @@ import Performance from "../sections/Performance"
 import Products from "../sections/Products"
 import Theartist from "../sections/Theartist"
 import Testimonials from "../sections/Testimonials"
+import Contact from "../sections/Contact"
 
-export {Navbar,About,Hero,Book, Testimonials,Performance,Products,Theartist}
+export {Navbar,About,Hero,Book, Contact, Testimonials,Performance,Products,Theartist}

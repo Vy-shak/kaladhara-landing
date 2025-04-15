@@ -27,6 +27,16 @@ const videos = [
         id: 5,
         title: "Sample Video 5",
         url: "https://www.w3schools.com/html/mov_bbb.mp4"
+    },
+    {
+        id: 6,
+        title: "Sample Video 5",
+        url: "https://www.w3schools.com/html/mov_bbb.mp4"
+    },
+    {
+        id: 7,
+        title: "Sample Video 5",
+        url: "https://www.w3schools.com/html/mov_bbb.mp4"
     }
 ];
 
@@ -37,9 +47,9 @@ function Performance() {
         <section className=' w-full gap-y-12 flex flex-col justify-center items-center'>
             <Heading title='Live cultural performance' />
             <Marquee >
-                <div className='w-full flex justify-center items-center gap-x-12'>
+                <div className='w-full flex justify-center items-center '>
                 {videos.map((item) => (
-                    <div key={item.id} className='w-56 rounded-lg h-72 bg-neutral-800'>
+                    <div key={item.id} className='w-56 mr-12 rounded-lg h-72 bg-neutral-800'>
 
                     </div>
                 ))}
