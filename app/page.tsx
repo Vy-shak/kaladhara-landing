@@ -1,4 +1,4 @@
-import {Hero,About,Book,Performance,Products,Theartist} from "./components/index"
+import {Hero,About,Book,Performance,Products,Theartist,Testimonials} from "./components/index"
 
 
 export default function Home() {
@@ -20,6 +20,9 @@ export default function Home() {
         </section>
         <section className="w-full pt-20 ">
         <Theartist/>
+        </section>
+        <section className="w-full pt-20 ">
+        <Testimonials/>
         </section>
       </section>
     </section>

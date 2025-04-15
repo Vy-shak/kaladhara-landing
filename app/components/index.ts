@@ -5,5 +5,6 @@ import Book from "../sections/Book"
 import Performance from "../sections/Performance"
 import Products from "../sections/Products"
 import Theartist from "../sections/Theartist"
+import Testimonials from "../sections/Testimonials"
 
-export {Navbar,About,Hero,Book,Performance,Products,Theartist}
+export {Navbar,About,Hero,Book, Testimonials,Performance,Products,Theartist}
