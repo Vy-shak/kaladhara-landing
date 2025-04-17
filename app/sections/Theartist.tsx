@@ -5,7 +5,7 @@ import Block from '../components/macro/Block'
 
 function Theartist() {
     return (
-        <section className='w-full flex-col gap-y-6 flex justify-between items-center'>
+        <section className='w-full flex-col text-white text-black gap-y-6 flex justify-between items-center'>
             <div className=' flex-col gap-y-4 flex justify-between items-center'>
                 <span className='text-white font-semibold  text-3xl'>The art and aritst</span>
             </div>

@@ -11,7 +11,6 @@ function Testimonials() {
 
           </div>
           <div className='w-2 shrink-0 h-1/2 bg-KalaYellow-500'>
-
           </div>
         </div>
         <p className='h-full text-lg'>"The energy, the performances, the attention to detail — Kaladhara is where the past and present of Kerala meet in harmony."</p>
