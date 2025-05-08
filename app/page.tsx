@@ -33,10 +33,10 @@ export default function Home() {
         <section className="w-full px-4 sm:px-8 lg:px-12 xl:px-16 2xl:px-20 flex flex-col  justify-center items-center">
         <About/>
        </section>
-        {/* <section className="w-full pt-20 ">
+        <section className="w-full pt-20 ">
         <Carousel slides={slideData}/>
         </section>
-        <section className="w-full pt-20 ">
+        {/* <section className="w-full pt-20 ">
         <Performance/>
         </section>
         <section className="w-full pt-20 ">
