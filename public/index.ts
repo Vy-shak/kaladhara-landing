@@ -8,6 +8,7 @@ import LogoText from "./Footer/Logotext.svg"
 import LinkdinLogo from './Footer/LinkedinLogo.svg'
 import Instalogo from "./Footer/Instalogo.svg"
 import FacebookLogo from "./Footer/FacebookLogo.svg"
+import Burgericon from "./icons/Burgericon.svg"
 
 
-export {LogoLg,Upcoming,Pattern1, LogoFooter,LogoText,LinkdinLogo,Instalogo, FacebookLogo,Pattern2,Pattern3}
+export {LogoLg,Upcoming,Pattern1, Burgericon, LogoFooter,LogoText,LinkdinLogo,Instalogo, FacebookLogo,Pattern2,Pattern3}
