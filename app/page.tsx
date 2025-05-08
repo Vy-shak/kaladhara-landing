@@ -30,9 +30,9 @@ export default function Home() {
     <section className="w-full">
       <Hero/>
       <section className="pb-12 w-full">
-        {/* <section className="w-full px-20">
+        <section className="w-full px-20">
         <About/>
-       </section> */}
+       </section>
         {/* <section className="w-full pt-20 ">
         <Carousel slides={slideData}/>
         </section>
