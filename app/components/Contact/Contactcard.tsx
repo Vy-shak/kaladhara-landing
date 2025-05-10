@@ -14,13 +14,13 @@ function Contactcard({ main, icon, details }: card) {
                 <div className=' p-2  bg-neutral-700 rounded'>
                     {icon}
                 </div>
-                <span className='text-xl font-semibold text-neutral-300'>{main}</span>
+                <span className='text-lg font-semibold text-neutral-300'>{main}</span>
             </div>
             <div className='w-full flex flex-col justify-center items-start'>
                 {details.map((item,index) => (
                     <div key={index}  className='flex justify-start h-fit items-center w-fit gap-x-3'>
                         <div className='w-2 h-2 shrink-0 rounded bg-KalaYellow-500'></div>
-                        <span>{item}</span>
+                        <span className='text-sm'>{item}</span>
                     </div>
                 ))}
             </div>
