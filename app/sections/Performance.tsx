@@ -45,8 +45,10 @@ const videos = [
 function Performance() {
     return (
         <section className=' w-full gap-y-12 flex flex-col justify-center items-center'>
-            <Heading title='Live cultural performance' />
-            <Marquee >
+            <div className='w-fit h-fit  flex justify-center items-center'>
+                <Heading title='Live cultural performance' />
+            </div>
+            <Marquee gradient={true} gradientWidth={30} gradientColor='#000000' direction='right'  >
                 <div className='w-full flex justify-center items-center '>
                 {videos.map((item) => (
                     <div key={item.id} className='w-56 mr-12 rounded-lg h-72 bg-neutral-800'>
@@ -55,6 +57,15 @@ function Performance() {
                 ))}
                 </div>
             </Marquee>
+            {/* <Marquee gradient={true} gradientWidth={30} gradientColor='#000000' direction='left' className='-rotate-4   relative top-32' >
+                <div className='w-full flex justify-center items-center '>
+                {videos.map((item) => (
+                    <div key={item.id} className='w-56 mr-12 rounded-lg h-72 bg-neutral-800'>
+
+                    </div>
+                ))}
+                </div>
+            </Marquee> */}
         </section>
     )
 }

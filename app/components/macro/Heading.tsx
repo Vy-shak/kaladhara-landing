@@ -10,10 +10,10 @@ function Heading({ title }: heading) {
       <div className='w-fit flex gap-y-2 justify-center items-center flex-col'>
         <span className='text-white font-semibold  text-3xl'>{title}</span>
         <div className='flex justify-center items-center w-full'>
-          <div className='w-1/3 bg-KalaRed-500 h-3'>
+          <div className='w-1/3 bg-KalaRed-500 h-1.5'>
 
           </div>
-          <div className='w-1/3 bg-KalaYellow-500 h-3'>
+          <div className='w-1/3 bg-KalaYellow-500 h-1.5'>
 
           </div>
         </div>
