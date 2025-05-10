@@ -1,12 +1,12 @@
-
 "use client";
 import { IconArrowNarrowRight } from "@tabler/icons-react";
+import Image, { StaticImageData } from "next/image";
 import { useState, useRef, useId, useEffect } from "react";
 
 interface SlideData {
   title: string;
   button: string;
-  src: string;
+  src: StaticImageData;
 }
 
 interface SlideProps {
@@ -21,7 +21,7 @@ const Slide = ({ slide, index, current, handleSlideClick }: SlideProps) => {
 
   const xRef = useRef(0);
   const yRef = useRef(0);
-  const frameRef = useRef<number>();
+  const frameRef = useRef<number>(0);
 
   useEffect(() => {
     const animate = () => {
@@ -91,17 +91,10 @@ const Slide = ({ slide, index, current, handleSlideClick }: SlideProps) => {
                 : "none",
           }}
         >
-          <img
-            className="absolute inset-0 w-[120%] h-[120%] object-cover opacity-100 transition-opacity duration-600 ease-in-out"
+            <Image             className="absolute inset-0 w-[120%] h-[120%] object-cover opacity-100 transition-opacity duration-600 ease-in-out"
             style={{
               opacity: current === index ? 1 : 0.5,
-            }}
-            alt={title}
-            src={"https://images.pexels.com/photos/27015351/pexels-photo-27015351/free-photo-of-small-semi-detached-house-by-street.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"}
-            onLoad={imageLoaded}
-            loading="eager"
-            decoding="sync"
-          />
+            }} src={src} alt="src" />
           {current === index && (
             <div className="absolute inset-0 bg-black/30 transition-all duration-1000" />
           )}
@@ -112,13 +105,11 @@ const Slide = ({ slide, index, current, handleSlideClick }: SlideProps) => {
             current === index ? "opacity-100 visible" : "opacity-0 invisible"
           }`}
         >
-          <h2 className="text-lg md:text-2xl lg:text-4xl font-semibold  relative">
+          <h2 className="text-lg sm:pb-1 lg:pb-3  md:text-xl lg:text-3xl font-semibold  relative">
             {title}
           </h2>
           <div className="flex justify-center">
-            <button className="mt-6  px-4 py-2 w-fit mx-auto sm:text-sm text-black bg-white h-12 border border-transparent text-xs flex justify-center items-center rounded-2xl hover:shadow-lg transition duration-200 shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)]">
-              {button}
-            </button>
+            <button className='px-6 sm:px-10 lg:px-16 py-2 bg-KalaYellow-500 text-xs sm:text-sm lg:py-3 font-semibold text-neutral-800'>EXPLORE</button>
           </div>
         </article>
       </li>
