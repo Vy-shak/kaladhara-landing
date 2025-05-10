@@ -19,10 +19,10 @@ export default function Home() {
         <section className="w-full pt-20 ">
         <Products/>
         </section>
-        {/* <section className="w-full pt-20 ">
+        <section className="w-full pt-20 ">
         <Theartist/>
         </section>
-        <section className="w-full pt-20 ">
+        {/* <section className="w-full pt-20 ">
         <Testimonials/>
         </section>
         <section className="w-full pt-20 ">
